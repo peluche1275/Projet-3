@@ -1,0 +1,65 @@
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    
+    /*  
+    =============
+        Header 
+    ============= 
+    */
+
+    #grille{
+        width: 100%;
+        box-shadow: 0px 0px 0px rgba(0,0,0,0.15);
+    }
+
+    #diaporama{
+        width: 100%;
+    }
+
+    
+    /*  
+    =============
+    Section : Diaporama 
+    ============= 
+    */
+
+    .divContainingTheSlide{
+        height: 400px;
+        background-size: cover; 
+        background-position: top;
+    }
+
+    .divContainingTheSlide_Texte{
+        width: 75%;
+        padding-top: 0px;
+    }
+    
+    #leftArrowOnPageButton, #rightArrowOnPageButton{
+        margin-top: -220px;
+    }
+
+    #rightArrowOnPageButton{
+        margin-left: 0px;
+        right: 15px;
+    }
+    
+
+    .traductionEnjoy{
+        padding-left: 0px;
+        padding-top: 370px;
+    }
+
+    /*  
+    =============
+    Section : Carte et réservation
+    ============= 
+    */
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    ul{
+        font-size: 15px;
+    }
+}

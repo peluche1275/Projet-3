@@ -1,0 +1,247 @@
+/* Fond du site */
+
+body {
+    background: #303133;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Grille principal */
+
+#grille{
+    background: #3C3C3C;
+    width: 1200px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.15);
+}
+
+/*  
+=============
+    Header 
+============= 
+*/
+
+#barreDeNavigation{
+    background: #262729;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#barreDeNavigation p{
+    margin: 0px;
+    color: #EFEFEF;
+    font-size: 48px;
+}
+
+.logo{ /* Image du logo */
+    height: 80px;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+#logoTexte{ /* Texte du logo */
+    margin: 0px;
+    color: #E67E22;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 48px;
+    letter-spacing: 0px;
+}
+
+#logoTexte-rouge{ /* le mot "velo" du logo est rouge */
+    color: #E74C3C;
+}
+
+#logoDiv{
+    display: flex;
+    align-items: center;
+}
+
+/*  
+=============
+  Section : Diaporama 
+============= 
+*/
+
+.divContainingTheSlide{
+    width: 100%;
+    height: 580px;
+    background-attachment: fixed;
+    background-size: cover;   
+    background-position: center; 
+}
+
+.divContainingTheSlide:nth-child(1){
+    background-image: linear-gradient(rgba(63, 1, 14, 0.5), rgba(63, 1, 14, 0.5)),url(images/bgdiapo1.jpg);
+}
+.divContainingTheSlide:nth-child(2){
+    background-image: linear-gradient(rgba(63, 1, 14, 0.5), rgba(63, 1, 14, 0.5)),url(images/bgdiapo2.jpg);
+}
+.divContainingTheSlide:nth-child(3){
+    background-image: linear-gradient(rgba(63, 1, 14, 0.5), rgba(63, 1, 14, 0.5)),url(images/bgdiapo3.jpg);
+}
+.divContainingTheSlide:nth-child(4){
+    background-image: linear-gradient(rgba(63, 1, 14, 0.5), rgba(63, 1, 14, 0.5)),url(images/bgdiapo4.jpg);
+}
+
+.divContainingTheSlide_Texte{
+    color: #EFEFEF;
+    position: absolute;
+    font-size: 80px;
+    width: 1200px;
+    padding-top: 150px;
+    padding-left: 75px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: -2px;
+}
+
+.divContainingTheSlide_Texte_Etape{
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+#leftArrowOnPageButton, #rightArrowOnPageButton{
+    position: absolute;
+    margin-top: -310px;
+    color: rgba(255,255,255,0.25);
+    font-size: 30px;
+}
+
+#leftArrowOnPageButton:hover, #rightArrowOnPageButton:hover{
+    color: rgba(255,255,255,1);
+}
+
+#leftArrowOnPageButton{
+    margin-left: 15px;
+}
+
+#rightArrowOnPageButton{
+    margin-left: 1165px;
+}
+
+.traductionEnjoy{
+    color: #EFEFEF;
+    position: absolute;
+    padding-top: 530px;
+    padding-left: 950px;
+    font-style: italic;
+    font-size: 13px;
+}
+
+/*  
+=============
+  Section : Carte et réservation 
+============= 
+*/
+
+#section2{
+    display: flex;
+}
+
+#carte, #reservation {
+    width: 50%;
+    height: 500px;
+}
+
+#reservation{
+    color: #EFEFEF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url(images/backgroundreservation.png) no-repeat right bottom;
+}
+
+#locationOfEntriesForReservation{
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#buttonReservationOnThePage,#locationOfEntriesForReservation,#section3{
+    display:none;
+}
+
+ul {
+    list-style:none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+li{
+    margin: 15px;
+}
+
+.kanji{
+    font-family: 'Zhi Mang Xing', cursive;
+}
+
+#titreReservation{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.motsStationsReservation{
+    background-color: rgba(0,0,0,0.15);
+    padding: 10px;
+    color: #BEBEBE;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.bouton{
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.15);
+    padding: 5px;
+    color: #BEBEBE;
+    cursor: pointer;
+}
+
+label{
+    color: #BEBEBE;
+}
+
+input[type=text] {
+    border: none;
+    background-color: #262729;
+    color: #BEBEBE;
+}
+
+input[type=text]:focus  {
+    background-color: #83808663;
+}
+
+#signature {
+    border: 1px solid #262729;
+    border-radius: 5px;
+    width: 300px;
+    height: 150px;
+}
+
+/*  
+=============
+  Section : Info Réservation
+============= 
+*/
+
+#section3{
+    padding-left: 5px;
+    color: #BEBEBE;
+}
+
+/*  
+=============
+    Pied de Page
+============= 
+*/
+
+footer{
+    background: #262729;
+}
+
